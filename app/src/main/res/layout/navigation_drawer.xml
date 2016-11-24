@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigationDrawer"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/nav">
+
+        <ImageView
+            android:id="@+id/nav_imageview_custumer"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/amsterdam" />
+
+        <TextView
+            android:id="@+id/nav_textview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="60dp"
+            android:text="Islam Yassin"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nav_textview_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nav_textview_name"
+            android:layout_marginLeft="90dp"
+            android:text="islamyassin21@gmail.com"
+
+            android:textColor="#ffd900"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/nav_textview_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nav_textview_email"
+            android:layout_marginLeft="90dp"
+            android:text="01119155799"
+            android:textColor="#ffd900"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/deleteMyAccount"
+        style="@style/contactTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Delete_My_Account"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/sitting"
+        style="@style/contactTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sitting"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/signOut"
+        style="@style/contactTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/singOut"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

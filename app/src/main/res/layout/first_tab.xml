@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TableLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top">
+
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/EditTextSearch"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_column="0"
+                android:layout_weight="6"
+                style="@style/contactTextView"
+                android:hint="Search..." />
+
+            <Button
+                android:id="@+id/position"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_column="1"
+                android:layout_weight="6"
+                android:background="#ffffff"
+                android:text="Search" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinnerSearch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            style="@style/contactTextView"
+            android:entries="@array/Filter" />
+
+        <Spinner
+            android:id="@+id/spinnerSort"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            style="@style/contactTextView"
+            android:entries="@array/Sort" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listView"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:src="@android:drawable/ic_input_add" />
+
+</FrameLayout>
